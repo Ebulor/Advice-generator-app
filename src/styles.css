@@ -7,18 +7,18 @@
 :root {
   --LightCyan: hsl(193, 38%, 86%);
   --NeonGreen: hsl(150, 100%, 66%);
-  --GrayishBlue: hsl(217, 19%, 38%);
-  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --BodyBackground: #202733;
+  --cardBackground: #313a48;
 }
 body {
-  background-color: var(--GrayishBlue);
+  background-color: var(--BodyBackground);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
 .container {
-  background-color: var(--DarkGrayishBlue);
+  background-color: var(--cardBackground);
   width: 340px;
   padding: 30px 20px;
   border-radius: 10px;
