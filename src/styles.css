@@ -1,4 +1,74 @@
-.App {
-  font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+}
+body {
+  background-color: var(--GrayishBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  background-color: var(--DarkGrayishBlue);
+  width: 340px;
+  padding: 30px 20px;
+  border-radius: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.quote-num {
+  color: var(--NeonGreen);
+  letter-spacing: 0.3rem;
+  font-size: 13px;
+}
+.quote-text {
+  font-size: 23px;
+  color: var(--LightCyan);
+  padding: 25px 0;
+}
+.desktop-divider {
+  display: none;
+}
+.divider {
+  padding-bottom: 10px;
+}
+.dice-icon {
+  position: absolute;
+  background-color: var(--NeonGreen);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -30px;
+  cursor: pointer;
+}
+.dice-icon:hover {
+  box-shadow: 0px 0px 40px var(--NeonGreen);
+}
+@media (min-width: 900px) {
+  .container {
+    width: 500px;
+    padding: 35px 20px;
+  }
+  .mobile-divider {
+    display: none;
+  }
+  .desktop-divider {
+    display: block;
+  }
 }
