@@ -3,8 +3,8 @@ import Quote from "./components/Quote";
 
 export default function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Quote />
-    </div>
+    </main>
   );
 }
