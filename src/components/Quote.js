@@ -28,7 +28,7 @@ export default function Quote() {
   return (
     <div className="container">
       <p className="quote-num">ADVICE #{quote.id}</p>
-      <p className="quote-text">"{quote.advice}"</p>
+      <p className="quote-text">“{quote.advice}”</p>
       <div className="divider">
         <img
           className="mobile-divider divider"
